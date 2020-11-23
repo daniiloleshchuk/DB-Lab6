@@ -5,7 +5,7 @@ import com.lab6.domain.IGeneralModel;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "equipment_location", schema = "oleshchuk_db", catalog = "")
+@Table(name = "equipment_location", schema = "oleshchuk_db")
 public class EquipmentLocation implements IGeneralModel {
     private Integer id;
     private String office;

@@ -11,10 +11,26 @@ public class Statement implements IGeneralModel {
     private String description;
     private Timestamp creationDate;
     private InitiatingEmployee initiatingEmployeeByInitiatingEmployeeId;
+    private ResponsibleEmployee responsibleEmployeeByResponsibleEmployeeId;
     private EquipmentLocation equipmentLocationByEquipmentLocationId;
     private Status statusByStatusId;
     private Priority priorityByPriorityId;
     private TypeOfStatement typeOfStatementByTypeOfStatementId;
+
+    public Statement() {
+        java.util.Date dt = new java.util.Date();
+        this.creationDate = new Timestamp(dt.getTime());
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "responsible_employee_id", referencedColumnName = "id", nullable = false)
+    public ResponsibleEmployee getResponsibleEmployeeByResponsibleEmployeeId() {
+        return responsibleEmployeeByResponsibleEmployeeId;
+    }
+
+    public void setResponsibleEmployeeByResponsibleEmployeeId(ResponsibleEmployee responsibleEmployeeByResponsibleEmployeeId) {
+        this.responsibleEmployeeByResponsibleEmployeeId = responsibleEmployeeByResponsibleEmployeeId;
+    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
