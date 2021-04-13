@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd>
+   <duplication lines="29" tokens="126">
+      <file column="21" endcolumn="65" endline="36" line="8"
+            path="/Users/daniiloleschuk/Desktop/Projects/LABS/Semester3/DB/Lab6/src/main/java/com/lab6/domain/implementation/Status.java"/>
+      <file column="30" endcolumn="65" endline="37" line="9"
+            path="/Users/daniiloleschuk/Desktop/Projects/LABS/Semester3/DB/Lab6/src/main/java/com/lab6/domain/implementation/TypeOfStatement.java"/>
+      <file column="30" endcolumn="65" endline="37" line="9"
+            path="/Users/daniiloleschuk/Desktop/Projects/LABS/Semester3/DB/Lab6/src/main/java/com/lab6/domain/implementation/WorkingPosition.java"/>
+      <codefragment><![CDATA[public class Status implements IGeneralModel {
+    private Integer id;
+    private String name;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", updatable = false, nullable = false)
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    @Basic
+    @Column(name = "name")
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;]]></codefragment>
+   </duplication>
+   <duplication lines="18" tokens="106">
+      <file column="48" endcolumn="14" endline="56" line="39"
+            path="/Users/daniiloleschuk/Desktop/Projects/LABS/Semester3/DB/Lab6/src/main/java/com/lab6/domain/implementation/TypeOfStatement.java"/>
+      <file column="48" endcolumn="14" endline="56" line="39"
+            path="/Users/daniiloleschuk/Desktop/Projects/LABS/Semester3/DB/Lab6/src/main/java/com/lab6/domain/implementation/WorkingPosition.java"/>
+      <codefragment><![CDATA[        TypeOfStatement that = (TypeOfStatement) o;
+
+        if (id != null ? !id.equals(that.id) : that.id != null) return false;
+        if (name != null ? !name.equals(that.name) : that.name != null) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (name != null ? name.hashCode() : 0);
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "TypeOfStatement{" +]]></codefragment>
+   </duplication>
+</pmd-cpd>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.21.0" timestamp="2020-11-23T15:38:55.356">
+<file name="/Users/daniiloleschuk/Desktop/Projects/LABS/Semester3/DB/Lab6/src/main/java/com/lab6/controller/IGeneralController.java">
+<violation beginline="4" endline="4" begincolumn="1" endcolumn="60" rule="UnusedImports" ruleset="Best Practices" package="com.lab6.controller" class="IGeneralController" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'org.springframework.web.bind.annotation.PathVariable'
+</violation>
+</file>
+<file name="/Users/daniiloleschuk/Desktop/Projects/LABS/Semester3/DB/Lab6/src/main/java/com/lab6/controller/implementation/InitiatingEmployeeController.java">
+<violation beginline="4" endline="4" begincolumn="1" endcolumn="57" rule="UnusedImports" ruleset="Best Practices" package="com.lab6.controller.implementation" class="InitiatingEmployeeController" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'com.lab6.respository.InitiatingEmployeeRepository'
+</violation>
+</file>
+</pmd>
