@@ -15,7 +15,6 @@ com/lab6/domain/implementation/TypeOfStatement.class
 com/lab6/controller/IGeneralController.class
 com/lab6/service/implementation/TypeOfStatementService.class
 com/lab6/respository/TypeOfStatementRepository.class
-com/lab6/config/SwaggerConfiguration.class
 com/lab6/service/implementation/StatusService.class
 com/lab6/controller/implementation/InitiatingEmployeeController.class
 com/lab6/domain/implementation/EquipmentLocation.class
